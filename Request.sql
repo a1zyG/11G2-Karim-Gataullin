@@ -4,6 +4,6 @@
 
 3. SELECT DISTINCT(SUBSTR(birthday, 1, 4)) FROM User;
 
-4. SELECT COUNT(*) AS 'total_items' FROM product;
+4. SELECT COUNT(*) AS 'total_items' FROM products;
 
 5. SELECT AVG(CAST((julianday('now') - julianday(birthday)) AS INTEGER) / 365) FROM login WHERE (CAST((julianday('now') - julianday(sign_up_date)) AS INTEGER) <= 61);
