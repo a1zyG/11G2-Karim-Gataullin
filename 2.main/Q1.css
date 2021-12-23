@@ -1,0 +1,18 @@
+.header-footer{
+    background-color:#80e06d;
+    list-style:none;
+    text-align: left;
+    height: 60px;
+    text-decoration: none;
+}
+.menu-item{
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+    list-style:none;
+}
+.page-footer {
+  background: #80e06d;
+  margin-top: 50px;
+}

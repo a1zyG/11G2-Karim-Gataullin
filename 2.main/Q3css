@@ -1,0 +1,33 @@
+html,body{
+    height: 100%;
+}
+ 
+a{
+    text-decoration: none;
+}
+ 
+header{
+    background-color: rgb(168, 168, 40);
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+ 
+header :hover{
+    color:black;
+}
+ 
+footer{
+    background-color: rgb(168, 168, 40);
+    height: 50px;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+}
+ 
+.link{
+    color: black;
+}
+.link :hover{
+    color: rgb(4, 207, 4);
+}
