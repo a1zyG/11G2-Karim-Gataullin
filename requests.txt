@@ -1,0 +1,26 @@
+1( инф-ия о пользователе)
+
+SELECT "id" as 'order_i',
+(SELECT Login FROM accounts WHERE accounts.id = customer_id) as 'name',
+(SELECT date FROM accounts WHERE accounts.id = customer_id) as 'date',
+(SELECT regdate FROM accounts WHERE accounts.id = customer_id) as 'regdate',
+(SELECT city FROM accounts WHERE accounts.id = id_b) as 'city',
+(SELECT street FROM accounts WHERE accounts.id = id_b) as 'street',
+(SELECT house FROM accounts WHERE accounts.id = id_b) as 'house'
+FROM basket WHERE basket.customer_id = 1;
+
+2.
+SELECT (SELECT price FROM orders WHERE product.idp = id_o) as 'price',
+(SELECT name FROM product WHERE product.idp = (SELECT id_o FROM orders WHERE product.idp = id_o)) as 'name'
+FROM product WHERE product.idp = 1;
+
+3(адреса пользователя)
+SELECT "id_b" as 'address id',
+(SELECT Login FROM accounts WHERE accounts.id = customer_id) as 'name',
+(SELECT date FROM accounts WHERE accounts.id = customer_id) as 'date',
+(SELECT regdate FROM accounts WHERE accounts.id = customer_id) as 'regdate',
+(SELECT city FROM accounts WHERE accounts.id = id_b) as 'city',
+(SELECT street FROM accounts WHERE accounts.id = id_b) as 'street',
+(SELECT house FROM accounts WHERE accounts.id = id_b) as 'house'
+FROM basket WHERE shopping_cart.customer_id = 2;
+
