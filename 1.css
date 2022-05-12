@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+body{ 
+        background: #c7b39b url(imgonline-com-ua-PuzzleadbBgje6ptwb.jpg);
+        -moz-background-size: 100%;
+        -webkit-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: #fff
+    
+}
+
+.header-footer{
+    background-color:#80e06d;
+    list-style:none;
+    text-align: left;
+    height: 60px;
+    text-decoration: none;
+}
+
+a{
+    color: #008000; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   a:visited {
+    color: #221fb6; /* Цвет посещённой ссылки */
+   } 
+   a:hover {
+    color: #eeff00; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+   }
+
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 20%; /* Ширина слоя */
+}
+
+.menu-item{
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+    list-style:none;
+}
+
+.item-card:hover{
+    outline: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+.main-header{
+    text-align:center;
+}
+
+.foto{
+    display: block;
+    margin: auto;
+}
+
+.laz-font{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color:rgb(143, 196, 74);
+}
+
+.laz{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-h4{
+    text-align: center;
+}
+
+.menu-prod{
+    text-align: center;
+}
+
+.item-card{
+    display: inline-block;
+    width: 330px;
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.item-img{
+    display: block;
+    margin: 0 auto;
+
+}
+
+.name{
+    display: inline-block;
+    width: 70%
+}
+
+.price{
+    text-align: right;
+    width: 25%;
+    display: inline-block;
+}
+
+.description{
+    text-emphasis: justify;
+}
+
+@media screen and (max-width: 1000px){
+    body{background: rgb(238, 81, 81);}
+    .menu-item{
+        display: block;
+    }
+}
